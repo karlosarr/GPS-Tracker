@@ -30,4 +30,4 @@ done
 
 echo ""
 
-sudo docker exec -it gpstracker-app bash -c "cd /app && su -s /bin/bash -c 'php artisan user:create --email=$email --name=$name --password=$password --enabled --admin' www-data"
+docker exec -it gpstracker-app bash -c "cd /app && su -s /bin/bash -c 'php artisan user:create --email=$email --name=$name --password=$password --enabled --admin' www-data"
